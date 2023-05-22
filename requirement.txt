@@ -1,0 +1,5 @@
+win10toast
+pynput
+pycaw
+pyaudio
+numpy
