@@ -19,3 +19,13 @@ Clear time: any longer than this will clear the previous working hours which is 
 
 ## Remind
 In the windows11, if you want to receive the notification when you watching the full screen video or playing games, please change the config in the windows11 setting > notification > Automatically enable Do Not Disturb
+
+
+## how to work
+
+``` shell
+conda create --name new_env python=3.8
+conda activate new_env
+pip install -r requirement.txt
+python main.py
+```
