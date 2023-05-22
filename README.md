@@ -2,7 +2,7 @@
 
 
 ## Function 
-Set a time to rest, and instead of manually starting, monitor the mouse, keyboard, and sound device to determine if you are looking at the screen.
+Set a time to rest your eyes, and instead of manually starting, monitor the mouse, keyboard, and sound device to determine if you are looking at the screen.
 
 ## Requirement package
 Look at the requirement.txt
