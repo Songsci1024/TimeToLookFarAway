@@ -12,8 +12,8 @@ class func_thread(QThread):
         global worktime, cleartime
         worktime = int(worktime.text())
         cleartime = int(cleartime.text())
-        assert 30 < worktime <= 240, 'The working time should be between 30 and 240' 
-        assert 30 <= cleartime <= 120, 'Error the clearime should be between 30 and 120'
+        assert 30 <= worktime <= 240, 'The working time should be between 30 and 240' 
+        assert 5 <= cleartime <= 120, 'Error the clearime should be between 5 and 120'
         start(worktime, cleartime)
     def run(self):
         self.start_function()
