@@ -14,6 +14,7 @@ activities：
 - audio device is working
 
 work time: the time which any one of these activities happens
+
 clear time: any longer than this will clear the previous working hours which is accumulated
 
 ## Remind
