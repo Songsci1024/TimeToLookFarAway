@@ -10,7 +10,7 @@ from datetime import datetime
 
 def print_time(timestamp):
     t = datetime.fromtimestamp(timestamp)
-    formatted_date = t.strptime('%Y-%m-%d')
+    formatted_date = t.strftime('%Y-%m-%d %H:%M:%S')
     return formatted_date
 
 class monitor_mouse:
