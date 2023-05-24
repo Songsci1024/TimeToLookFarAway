@@ -129,13 +129,16 @@ def start(worktime, cleartime, unit_checktime = 1, check_interval_seconds = 10):
             no_operation_time += UNIT_CHECKTIME
             print(f'no operation time: {no_operation_time / 60},add unit_checktime')
         else:
-            last_time += no_operation_time
-            no_operation_time = 0
+            if no_operation_time != 0:
+                last_time += no_operation_time
+                print(f'new time_begin: {print_time(last_time)}')
+                no_operation_time = 0
         mm.used = mk.used = ma.used = False    
 
         if no_operation_time == CLEARTIME:       # Any longer than this save time will clear the previous working time
             last_time = time.time()
             no_operation_time = 0
+            print('clear work time')
         if nowtime - last_time > WORKTIME:      #  time to look far away
             last_time = time.time()
             print(f'time_end:{print_time(nowtime)}')
