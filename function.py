@@ -130,6 +130,7 @@ def start(worktime, cleartime, unit_checktime = 1, check_interval_seconds = 10):
             print(f'no operation time: {no_operation_time / 60},add unit_checktime')
         else:
             last_time += no_operation_time
+            print(f'new time_begin:{print_time(last_time)}')
             no_operation_time = 0
         mm.used = mk.used = ma.used = False    
 
